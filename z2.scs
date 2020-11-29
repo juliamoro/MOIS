@@ -1,0 +1,113 @@
+sc_node_not_relation -> concept_spatial_figure;;
+
+concept_spatial_figure => nrel_system_idtf: [concept_spatial_figure];;
+concept_spatial_figure => nrel_main_idtf: [пространственная фигура](*<- lang_ru;;*);;
+concept_spatial_figure => nrel_idtf: [фигура](*<- lang_ru;;*);;
+concept_spatial_figure => nrel_idtf: [figure](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_spatial_figure;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Пространственная фигура - фигура,не все точки которой лежат в одной плоскости](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Пространственная фигура)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_plane;;
+->concept_dot;;
+->concept_figure;;
+        *);;
+*);;
+
+concept_spatial_figure<=nrel_inclusion: concept_figure;;
+nerl_inclusion<-sc_node_norole_relation;;
+
+concept_spatial_figure -> rrel_example: cone;;
+rrel_example<-sc_node_role_relation;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_spatial_figure;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Пространственная фигура-можно свободно перемещать в пространстве, не изменяя ее размеров и формы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Пространственной фигуре)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_space;;
+        *);;
+*);;
+
+//
+
+sc_node_norole_relation -> nrel_projection;;
+
+nrel_projection => nrel_system_idtf: [nrel_projection];;
+nrel_projection => nrel_main_idtf: [проекция*](*<- lang_ru;;*);;
+nrel_projection => nrel_idtf: [быть проекцией*](*<- lang_ru;;*);;
+nrel_projection => nrel_idtf: [projection*](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_projection;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Проекция*-это изображение фигур на плоскости](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Проекция*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_picture;;
+            -> concept_plane;;
+            -> concept_figure;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_projection;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Для получения проекции нужно соединить точки прямыми линиями в том же порядке,как они соеденины в фигуре](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Проекция*)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+            -> concept_line;;
+            ->concept_dot;;
+            -> concept_unite;;
+            -> concept_figure;;
+        *);;
+*);;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_projection;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+nrel_projection => nrel_definitional_domain:..union;;
+nrel_projection => nrel_first_domain: concept_spatial_figure;;
+nrel_projection => nrel_second_domain: concept_figure;;
+..union<=nrel_union:{concept_spatial_figure;concept_figure};;
+
+concept_figure-> cube;;
+concept_spatial_figure-> square;;
+cube=>nrel_projection:square;;
+
+relation => nrel_projection: non_oriented_relation;;
+relation => nrel_projection: binary_relation;;
+
+binary_relation => nrel_projection: antireflexive_relation;;
+binary_relation => nrel_projection: antitransitive_relation;;
+binary_relation => nrel_projection: symetric_relation;;
+
+antireflexive_relation -> nrel_projection;;
+antitransitive_relation -> nrel_projection;;
+symmetric_relation -|> nrel_projection;;
+

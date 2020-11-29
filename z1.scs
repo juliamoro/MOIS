@@ -1,0 +1,58 @@
+geometria=[*
+concept_circle <- sc_node_not_relation;;
+concept_geometric <- sc_node_not_relation;;
+concept_segment <- sc_node_not_relation;;
+concept_value <- sc_node_not_relation;;
+concept_angle <- sc_node_not_relation;;
+
+concept_circle -> AOB;;
+
+concept_geometric_point -> O;;
+concept_geometric_point -> A;;
+
+concept_segment -> R;;
+concept_segment -> AB;;
+concept_segment -> CA;;
+concept_segment -> OA;;
+concept_segment -> OB;;
+
+concept_value -> X;;
+concept_value -> l;;
+concept_value -> r;;
+
+concept_angle -> Angle_X;;
+
+concept_value->2;;
+
+AOB => nrel_center: O;;
+nerl_center<-sc_node_norole_relation;;
+AOB => nrel_arc: AB;;
+nerl_arc<-sc_node_norole_relation;;
+AOB => nrel_inscribed_angle: Angle_X;;
+nerl_inscribed_angle<-sc_node_norole_relation;;
+
+AOB => nrel_radius: ...
+(*
+    -> OA;;
+    -> OB;;
+    -> R;;
+*);;
+nerl_radius<-sc_node_norole_relation;;
+
+Angle_X=> nrel_lean: AB;;
+nerl_lean<-sc_node_norole_relation;;
+Angle_X=> nrel_degree_measure: X;;
+nerl_degree_measure<-sc_node_norole_relation;;
+
+CA <=> nerl_perpendicular: OB;;
+nerl_perpendicular<-sc_node_norole_relation;;
+CA ->rrel_boundary_point: A;;
+rrel_boundary_point<-sc_node_role_relation;;
+
+CA =>nerl_lengthr: l;;
+R=>nerl_lengthr:r;;
+nerl_lengthr<-sc_node_role_relation;;
+
+r<={2;l};;
+
+*];;

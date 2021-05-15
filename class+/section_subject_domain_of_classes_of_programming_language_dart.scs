@@ -1,0 +1,9 @@
+section_subject_domain_of_classes_of_programming_language_dart
+=> nrel_main_idtf:
+	[Раздел. Предметная область классы языка программирования dart.](* <- lang_ru;; *);
+	[Section. Subject domain of classes of programming language dart.](* <- lang_en;; *);
+<- not_enough_formed_structure;
+<- atomic_section;;
+section_subject_domain_of_classes_of_programming_language_dart = [*^"file://subject_domain_of_classes_of_programming_language_dart.scsi"*];;
+
+//-> rrel_key_sc_element: subject_domain_of_classes_of_programming_language_dart;;

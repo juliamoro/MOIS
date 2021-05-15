@@ -1,0 +1,46 @@
+
+
+sc_node_not_relation->concept_access_modifier_public;;
+
+
+
+
+concept_access_modifier_public=> nrel_main_idtf: [модификатор доступа public](* <- lang_ru;; *);;
+concept_access_modifier_public=> nrel_main_idtf: [access modifier public](* <- lang_en;; *);;
+definition ->...
+(*
+->rrel_key_sc_element: concept_access_modifier_public;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Модификатор доступа public: публичный, общедоступный или член класса. Поля и методы, объявленные с модификатором public, видны другим классам из текущего пакета и из внешних пакетов. ](*
+<-lang_ru;;
+=>nrel_format:format_html;;*);;*);;
+=> nrel_main_idtf: [Определение (модификатор доступа public)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+	concept_class;
+	nrel_method;
+	concept_access_modifier;
+	concept_variable;
+	concept_package
+
+  
+
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_access_modifier_public;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Создан для того, чтобы отдавать что-то пользователям. Например, интерфейс программы](*<- lang_ru;;
+=>nrel_format:format_html;;*);;*);;
+=> nrel_main_idtf: [Утверждение(модификатор доступа public)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+   concept_interface;
+   concept_user
+
+};;
+*);;
+
+
+
+

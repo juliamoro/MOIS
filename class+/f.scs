@@ -1,0 +1,40 @@
+sc_node_not_relation-> concept_Future_class;;
+sc_node_not_relation-> concept_potential_value;;
+sc_node_not_relation-> concept_error;;
+sc_node_not_relation-> concept_class;;
+sc_node_not_relation-> concept_asynchronous_code;;
+
+
+sc_node_norole_relation -> nrel_display;;
+sc_node_norole_relation -> nrel_write;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_Future_class=> nrel_main_idtf: [Класс Future](*<- lang_ru;;*);;
+concept_Future_class=> nrel_main_idtf: [Future class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Future_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Класс Future - ключевой класс для написания асинхронного кода. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Класс Future)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_class;
+    concept_asynchronous_code;
+    nrel_write
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_Future_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Класс Future используется для представления потенциального значения или ошибки. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Класс Future)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_potential_value;
+    concept_error;
+    nrel_use;
+    nrel_display
+};;
+*);;

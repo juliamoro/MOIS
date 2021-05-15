@@ -1,0 +1,40 @@
+
+
+sc_node_not_relation->concept_access_modifier_private;;
+
+
+
+
+concept_access_modifier_private=> nrel_main_idtf: [модификатор доступа private](* <- lang_ru;; *);;
+concept_access_modifier_private=> nrel_main_idtf: [access modifier private](* <- lang_en;; *);;
+definition ->...
+(*
+->rrel_key_sc_element: concept_access_modifier_private;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Модификатор доступа private — наиболее строгий модификатор доступа. Он ограничивает видимость переменных и методов пределами одного класса. ](*
+<-lang_ru;;
+=>nrel_format:format_html;;*);;*);;
+=> nrel_main_idtf: [Определение (модификатор доступа private)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+	concept_class;
+	nrel_method;
+	concept_access_modifier
+
+  
+
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_access_modifier_private;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ограничение доступа к полям и реализация геттеров-сеттеров — самый распространенный пример использования private в реальной работе.](*<- lang_ru;;
+=>nrel_format:format_html;;*);;*);;
+=> nrel_main_idtf: [Утверждение(модификатор доступа private)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+   nrel_class_field
+
+};;
+*);;
+

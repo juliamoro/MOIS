@@ -1,0 +1,47 @@
+sc_node_not_relation-> concept_Stream_class;;
+
+sc_node_not_relation-> concept_type_of_streams;;
+sc_node_not_relation-> concept_2;;
+sc_node_not_relation-> concept_Single_subscription_stream;;
+sc_node_not_relation-> concept_broadcast_stream;;
+sc_node_not_relation-> concept_class;;
+sc_node_not_relation-> concept_opporunity;;
+sc_node_not_relation-> concept_sequence_of_events;;
+
+
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_get;;
+sc_node_norole_relation -> nrel_exist;;
+
+concept_Stream_class=> nrel_main_idtf: [Класс Stream](*<- lang_ru;;*);;
+concept_Stream_class=> nrel_main_idtf: [Stream class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Stream_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Класс Stream - это класс, который предоставляет возможность получить последовательность событий. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Класс Stream)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_class;
+    concept_opporunity;
+    concept_sequence_of_events;
+    nrel_provide;
+    nrel_get
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_Stream_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Существует два типа потоков: потоки Single-subscription и потоки broadcast. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Класс Stream)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_2;
+    concept_type_of_streams;
+    concept_Single_subscription_stream;
+    concept_broadcast_stream;
+    nrel_exist
+};;
+*);;

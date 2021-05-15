@@ -1,0 +1,40 @@
+sc_node_not_relation-> concept_Never_class;;
+
+sc_node_not_relation-> concept_expression;;
+sc_node_not_relation-> concept_class;;
+
+sc_node_norole_relation -> nrel_function;;
+sc_node_norole_relation -> nrel_indicate;;
+sc_node_norole_relation -> nrel_successfully_finish_evaluating;;
+sc_node_norole_relation -> nrel_call_exception;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_Never_class=> nrel_main_idtf: [Класс Never](*<- lang_ru;;*);;
+concept_Never_class=> nrel_main_idtf: [Never class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Never_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Класс Never - класс, который указывает, что выражение никогда не может успешно завершить вычисление. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Класс Never)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_class;
+    concept_expression;
+    nrel_indicate;
+    nrel_successfully_finish_evaluating
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_Never_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Класс Never используется для функций, которые всегда вызывают исключение. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Класс Never)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    nrel_function;
+    nrel_call_exception;
+    nrel_use
+};;
+*);;

@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_MySQL_database;;
+
+sc_node_not_relation -> concept_relational_system;;
+sc_node_not_relation -> concept_database;;
+sc_node_not_relation -> concept_type;;
+sc_node_not_relation -> concept_table;;
+sc_node_not_relation -> concept_record_level_transaction;;
+
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_support;;
+sc_node_norole_relation -> nrel_full_text_search;;
+
+concept_MySQL_database => nrel_main_idtf: [MySQL база данных](* <- lang_ru;; *);;
+concept_MySQL_database => nrel_main_idtf: [MySQL database](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_MySQL_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[MySQL – реляционная система управления базами данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (MySQL база данных)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	   -> concept_relational_system;;
+	   -> concept_database;;
+	   -> nrel_control;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_MySQL_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поддерживает множество типов таблиц, полнотекстовый поиск и транзакции на уровне отдельных записей.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(MySQL база данных.)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	    -> concept_type;;
+	    -> concept_table;;
+	    -> concept_record_level_transaction;;
+	    -> nrel_support;;
+	    -> nrel_full_text_search;;
+	*);;
+*);;

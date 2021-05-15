@@ -1,0 +1,62 @@
+sc_node_norole_relation -> nrel_super;;
+
+nrel_super => nrel_system_idtf: [nrel_super];;
+nrel_super => nrel_idtf: [super](*<- lang_en;;*);;
+nrel_super => nrel_main_idtf: [super](*<- lang_ru;;*);;
+nrel_super => nrel_idtf: [super](*<- lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_super;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Для обращения к функциональности базового класса из производного применяется ключевое слово super.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(super)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_base_class_functionality;;
+			-> nrel_appeal;;
+            -> concept_keywordt;;
+			-> concept_derivative_class_functionality;;
+
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_super;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Вызов super фактически будет представлять обращение к конструктору базового класса.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(super)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+            -> concept_base_class_constructor;;
+            ->nrel_appeal;;
+			->nrel_call;;
+        *);;
+*);;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_super;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+nrel_super => nrel_definitional_domain:..union;;
+nrel_super => nrel_first_domain: concept_constructor;;
+nrel_super => nrel_second_domain: concept_values;;
+..union<=nrel_combination:{concept_constructor;concept_values};;
+
+relation => nrel_super: non_oriented_relation;;
+relation => nrel_super: binary_relation;;
+
+binary_relation => nrel_super: antireflexive_relation;;
+binary_relation => nrel_super: antitransitive_relation;;
+binary_relation => nrel_super: symetric_relation;;
+
+antireflexive_relation -> nrel_super;;
+antitransitive_relation -> nrel_super;;
+symmetric_relation -|> nrel_super;;

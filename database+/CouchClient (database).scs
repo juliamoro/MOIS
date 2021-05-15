@@ -1,0 +1,67 @@
+sc_node_not_relation -> concept_couch_client;;
+
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_client;;
+sc_node_not_relation -> concept_SDK;;
+sc_node_not_relation -> concept_access;;
+sc_node_not_relation -> concept_database;;
+sc_node_not_relation -> concept_document;;
+sc_node_not_relation -> concept_NoSQL_Couchbase;;
+sc_node_not_relation -> concept_URI_server;;
+sc_node_not_relation -> concept_cluster;;
+sc_node_not_relation -> concept_target_bucket_name;;
+sc_node_not_relation -> concept_password;;
+sc_node_not_relation -> concept_bucket;;
+sc_node_not_relation -> concept_Future;;
+sc_node_not_relation -> concept_possibility;;
+
+sc_node_norole_relation -> nrel_accept;;
+sc_node_norole_relation -> nrel_login;;
+sc_node_norole_relation -> nrel_return;;
+sc_node_norole_relation -> nrel_give;;
+sc_node_norole_relation -> nrel_connect;;
+
+
+concept_couch_client => nrel_main_idtf: [Couch client](* <- lang_ru;; *);;
+concept_couch_client => nrel_main_idtf: [Couch client](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_couch_client;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Couch client – это клиентский SDK для доступа к базе данных документов NoSQL Couchbase на языке программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Couch client)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_programming_language_Dart;;
+          -> concept_client;;
+	  -> concept_SDK;;
+	  -> concept_access;;
+	  -> concept_database;;
+	  -> concept_document;;
+	  -> concept_NoSQL_Couchbase;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_couch_client;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Принимает URI серверов в кластере, имя целевого сегмента и пароль для входа в сегмент, возвращает Future, что дает клиенту возможность подключиться к указанному сегменту.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Couch client)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_accept;;
+	   -> concept_client;;
+	   -> nrel_login;;
+	   -> nrel_return;;
+	   -> nrel_give;;
+	   -> nrel_connect;;
+	   -> concept_URI_server;;
+	   -> concept_cluster;;
+	   -> concept_target_bucket_name;;
+	   -> concept_password;;
+	   -> concept_bucket;;
+	   -> concept_Future;;
+	   -> concept_possibility;;
+	*);;
+*);;

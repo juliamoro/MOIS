@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_shelf_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_web_server;;
+sc_node_not_relation -> concept_part;;
+
+sc_node_norole_relation -> nrel_make_easier;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_compose;;
+
+
+concept_shelf_framework => nrel_main_idtf: [Shelf framework](* <- lang_ru;; *);;
+concept_shelf_framework => nrel_main_idtf: [Shelf framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_shelf_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Shelf – это фреймворк веб серверов языка программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Shelf framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_web_server;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_shelf_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Упрощает создание и компоновку веб-серверов и частей веб-серверов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Shelf framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> nrel_make_easier;;
+	  -> nrel_create;;
+	  -> nrel_compose;;
+	  -> concept_web_server;;
+	  -> concept_part;;
+
+	*);;
+*);;

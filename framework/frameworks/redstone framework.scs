@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_redstone_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_web_server;;
+sc_node_not_relation -> concept_annotation;;
+sc_node_not_relation -> concept_method;;
+sc_node_not_relation -> concept_function;;
+sc_node_not_relation -> concept_web_interface;;
+
+
+sc_node_norole_relation -> nrel_based_on;;
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_publish;;
+
+
+concept_redstone_framework => nrel_main_idtf: [Redstone framework](* <- lang_ru;; *);;
+concept_redstone_framework => nrel_main_idtf: [Redstone framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_redstone_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Redstone – это фреймворк веб серверов языка программирования Dart на основе аннотаций.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Redstone framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_web_server;;
+	  -> nrel_based_on;;
+	  -> concept_annotation;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_redstone_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет методы для публикации функции через веб-интерфейс.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Redstone framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	 -> nrel_provide;;
+	 -> concept_method;;
+	 -> nrel_publish;;
+	 -> concept_function;;
+	 -> concept_web_interface;;
+	*);;
+*);;

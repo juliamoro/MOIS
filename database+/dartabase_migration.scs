@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_dartabase_migration;;
+
+sc_node_not_relation -> concept_module;;
+sc_node_not_relation -> concept_structure;;
+sc_node_not_relation -> concept_database;;
+sc_node_not_relation -> concept_version_control;;
+sc_node_not_relation -> concept_MySQL_database;;
+sc_node_not_relation -> concept_SQLite_database;;
+sc_node_not_relation -> concept_PGSQL_database;;
+
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_support;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_dartabase_migration => nrel_main_idtf: [Dartabase migration](* <- lang_ru;; *);;
+concept_dartabase_migration => nrel_main_idtf: [Dartabase migration](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_dartabase_migration;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Dartabase migration – модуль для управления структурой базы данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Dartabase migration)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_module;;
+	  -> concept_structure;;
+	  -> concept_database;;
+ 	  -> nrel_control;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_dartabase_migration;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поддерживает контроль версий с использованием MySQL / SQLite / PGSQL.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Dartabase migration)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_support;;
+	   -> nrel_use;;
+	   -> concept_version_control;;
+	   -> concept_MySQL_database;;
+	   -> concept_SQLite_database;;
+	   -> concept_PGSQL_database;;
+	*);;
+*);;

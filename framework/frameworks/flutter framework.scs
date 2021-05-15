@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_flutter_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_mobile_application;;
+sc_node_not_relation -> concept_internet;;
+sc_node_not_relation -> concept_table_computer;;
+sc_node_not_relation -> concept_unified_code_base;;
+sc_node_not_relation -> concept_layered_architecture;;
+sc_node_not_relation -> concept_customization;;
+sc_node_not_relation -> concept_fast_rendering;;
+sc_node_not_relation -> concept_flexible_design;;
+
+sc_node_norole_relation -> nrel_contain;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_allow;;
+sc_node_norole_relation -> nrel_results;;
+
+concept_flutter_framework => nrel_main_idtf: [Flutter framework](* <- lang_ru;; *);;
+concept_flutter_framework => nrel_main_idtf: [Flutter framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_flutter_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Flutter – это фреймворк языка программирования Dart для создания приложений для мобильных устройств, Интернета и настольных компьютеров из единой базы кода.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Flutter framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> nrel_create;;
+	  -> concept_mobile_application;;
+	  -> concept_internet;;
+	  -> concept_table_computer;;
+	  -> concept_unified_code_base;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_flutter_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Содержит многоуровневую архитектуру, которая допускает настройку, что приводит к быстрому рендерингу и гибкому дизайну.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Flutter framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	 -> nrel_contain;;
+	 -> concept_layered_architecture;;
+	 -> nrel_allow;;
+	 -> concept_customization;;
+	 -> nrel_results;;
+	 -> concept_fast_rendering;;
+	 -> concept_flexible_design;;
+	*);;
+*);;

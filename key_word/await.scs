@@ -1,0 +1,99 @@
+sc_node_norole_relation -> nrel_await;;
+
+//nrel_await => nrel_system_idtf: [nrel_await];;
+nrel_await => nrel_idtf: [await*](*<- lang_en;;*);;
+nrel_await => nrel_idtf: [await*](*<- lang_ru;;*);;
+
+nrel_await => nrel_main_idtf: [await*](*<- lang_en;;*);;
+nrel_await => nrel_main_idtf: [await*](* <- lang_ru;; *);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_await;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [await - это ключевое слово, которое выполняет функцию асинхронно, а затем приостаннавлевает 
+выполнение текущей функции,пока не будет готов результат,после чего перейдет к следующей строке.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(await*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_keyword;;
+			-> nrel_asynchronously;;
+			-> nrel_result;;
+			-> concept_string;;
+            -> concept_function;;
+			-> nrel_fulfills;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_await;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ключевое слово await работает только в асинхронных функциях.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(await*)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+            -> nrel_work;;
+			-> concept_asynchronous_function;;
+        *);;
+*);;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_await;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+nrel_await => nrel_definitional_domain:..union;;
+nrel_await => nrel_first_domain: concept_asynchronous_function;;
+nrel_await => nrel_second_domain: concept_function;;
+..union<=nrel_combination:{concept_asynchronous_function;concept_function};;
+
+nrel_await <- rrel_key_sc_element:...
+
+        (*
+
+            <-illustration;;
+
+         =>nrel_main_idtf:
+
+            [визуализация] (* <- lang_ru;; *);;
+
+         =>nrel_main_idtf:
+
+            [visualization](* <- lang_en;; *);;
+
+        <=nrel_sc_text_translation:...
+
+            (*
+
+                ->rrel_example: "file://../pics/await.jpg"(*=>nrel_format:format_jpg;;*);;//тут Диана файл с фото создать надо
+
+            *);;
+
+
+
+
+        *);;
+
+
+//пример 
+concept_asynchronous_function-> hello_async;;
+concept_function-> main;;
+hello_async=>nrel_await:main;;
+
+relation => nrel_await: non_oriented_relation;;
+relation => nrel_await: binary_relation;;
+
+binary_relation => nrel_await: antireflexive_relation;;
+binary_relation => nrel_await: antitransitive_relation;;
+binary_relation => nrel_await: symetric_relation;;
+
+antireflexive_relation -> nrel_await;;
+antitransitive_relation -> nrel_await;;
+symmetric_relation -|> nrel_await;;

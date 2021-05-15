@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_start_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_web_server;;
+sc_node_not_relation -> concept_possibility;;
+sc_node_not_relation -> concept_dynamic_request;;
+sc_node_not_relation -> concept_websocket;;
+sc_node_not_relation -> concept_JSON_response;;
+
+
+sc_node_norole_relation -> nrel_handle;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+concept_start_framework => nrel_main_idtf: [Start framework](* <- lang_ru;; *);;
+concept_start_framework => nrel_main_idtf: [Start framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_start_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Start – это фреймворк веб серверов языка программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Start framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_web_server;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_start_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможность обслуживания статических файлов, обработки динамических запросов, веб-сокетов и создания ответов JSON.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Start framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> nrel_handle;;
+	  -> nrel_create;;
+	  -> nrel_provide;;
+	  -> concept_possibility;;
+	  -> concept_dynamic_request;;
+	  -> concept_websocket;;
+	  -> concept_JSON_response;;
+	*);;
+*);;

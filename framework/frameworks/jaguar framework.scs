@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_jaguar_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_speed;;
+sc_node_not_relation -> concept_simplicity;;
+sc_node_not_relation -> concept_extensibility;;
+sc_node_not_relation -> concept_HTTP_request;;
+sc_node_not_relation -> concept_method;;
+
+
+sc_node_norole_relation -> nrel_build_for;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_quick_handling;;
+
+
+concept_jaguar_framework => nrel_main_idtf: [Jaguar framework](* <- lang_ru;; *);;
+concept_jaguar_framework => nrel_main_idtf: [Jaguar framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_jaguar_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Jaguar – это фреймворк языка программирования Dart для обеспечения скорости, простоты и расширяемости.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Jaguar framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> nrel_build_for;;
+	  -> concept_speed;;
+	  -> concept_simplicity;;
+	  -> concept_extensibility;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_jaguar_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет методы для быстрой обработки HTTP запросов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Jaguar framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	 -> nrel_provide;;
+	 -> concept_HTTP_request;;
+	 -> concept_method;;
+	 -> nrel_quick_handling;;
+	*);;
+*);;

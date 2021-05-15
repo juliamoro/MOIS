@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_force_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_web;;
+sc_node_not_relation -> concept_possibility;;
+sc_node_not_relation -> concept_application;;
+sc_node_not_relation -> concept_realtime;;
+
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_create;;
+
+
+concept_force_framework => nrel_main_idtf: [Force framework](* <- lang_ru;; *);;
+concept_force_framework => nrel_main_idtf: [Force framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_force_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Force – это веб-фреймворк языка программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Force framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_web;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_force_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможность создания приложений в режиме реального времени.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Force framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+         -> concept_possibility;;
+	 -> nrel_provide;;
+	 -> nrel_create;;
+	 -> concept_application;;
+	 -> concept_realtime;;
+	*);;
+*);;

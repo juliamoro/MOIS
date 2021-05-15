@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_express_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_interface;;
+sc_node_not_relation -> concept_HTTP_server;;
+sc_node_not_relation -> concept_static_file_server;;
+sc_node_not_relation -> concept_module;;
+
+sc_node_norole_relation -> nrel_include;;
+
+
+concept_express_framework => nrel_main_idtf: [Express framework](* <- lang_ru;; *);;
+concept_express_framework => nrel_main_idtf: [Express framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_express_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Express – это фреймворк языка программирования Dart для интерфейсов HttpServer.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Express framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+ 	  -> concept_programming_language_Dart;;
+	  -> concept_interface;;
+	  -> concept_HTTP_server;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_express_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Включает модуль статического файлового сервера.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Express framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> nrel_include;;
+	  -> concept_static_file_server;;
+	  -> concept_module;;
+	*);;
+*);;

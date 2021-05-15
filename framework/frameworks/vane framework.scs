@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_vane_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_commonly_used_parameter;;
+sc_node_not_relation -> concept_commonly_used_object;;
+sc_node_not_relation -> concept_comfortable_form;;
+sc_node_not_relation -> concept_built_in_server_runtime_environment;;
+sc_node_not_relation -> concept_middleware_system;;
+
+sc_node_norole_relation -> nrel_contain;;
+
+
+concept_vane_framework => nrel_main_idtf: [Vane framework](* <- lang_ru;; *);;
+concept_vane_framework => nrel_main_idtf: [Vane framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_vane_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Vane – это фреймворк языка программирования Dart для часто используемых параметров и объектов в удобной форме.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Vane framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_commonly_used_parameter;;
+	  -> concept_commonly_used_object;;
+	  -> concept_comfortable_form;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_vane_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Содержит встроенную серверную среду выполнения и систему промежуточного программного обеспечения.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Vane framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	 -> nrel_contain;;
+	 -> concept_built_in_server_runtime_environment;;
+	 -> concept_middleware_system;;
+
+	*);;
+*);;

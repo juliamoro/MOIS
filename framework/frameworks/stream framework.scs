@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_stream_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_web_server;;
+sc_node_not_relation -> concept_request_routing;;
+sc_node_not_relation -> concept_filtering;;
+sc_node_not_relation -> concept_template_engine;;
+sc_node_not_relation -> concept_websocket;;
+sc_node_not_relation -> concept_MVC_design_pattern;;
+sc_node_not_relation -> concept_file_based_static_resource;;
+
+sc_node_norole_relation -> nrel_support;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+concept_stream_framework => nrel_main_idtf: [Stream framework](* <- lang_ru;; *);;
+concept_stream_framework => nrel_main_idtf: [Stream framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_stream_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Stream – это фреймворк веб серверов языка программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Stream framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_web_server;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_stream_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет маршрутизацию запросов, фильтрацию, механизм шаблонов, WebSocket, шаблон проектирования MVC и статические ресурсы на основе файлов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Stream framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> nrel_provide;;
+	  -> nrel_support;;
+	  -> concept_request_routing;;
+	  -> concept_filtering;;
+	  -> concept_template_engine;;
+	  -> concept_websocket;;
+	  -> concept_MVC_design_pattern;;
+	  -> concept_file_based_static_resource;;
+	*);;
+*);;

@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_PostgreSQL_database;;
+
+sc_node_not_relation -> concept_database;;
+sc_node_not_relation -> concept_open_source;;
+sc_node_not_relation -> concept_user;;
+sc_node_not_relation -> concept_reliability;;
+sc_node_not_relation -> concept_feature_robustness;;
+sc_node_not_relation -> concept_performance;;
+
+sc_node_norole_relation -> nrel_provide;;
+
+concept_PostgreSQL_database => nrel_main_idtf: [PostgreSQL база данных](* <- lang_ru;; *);;
+concept_PostgreSQL_database => nrel_main_idtf: [PostgreSQL database](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_PostgreSQL_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[PostgreSQL – база данных с открытым исходным кодом.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (PostgreSQL база данных)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	   -> concept_database;;
+	   -> concept_open_source;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_PostgreSQL_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет пользователям надежность, функциональность и производительность.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(PostgreSQL база данных.)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_provide;;
+	   -> concept_user;;
+ 	   -> concept_reliability;;
+	   -> concept_feature_robustness;;
+	   -> concept_performance;;
+	*);;
+*);;

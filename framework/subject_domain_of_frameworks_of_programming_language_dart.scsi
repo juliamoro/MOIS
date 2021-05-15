@@ -1,0 +1,27 @@
+subject_domain_of_frameworks_of_programming_language_dart
+	=> nrel_main_idtf:
+	              [Предметная область фреймворков языка программирования dart]
+	              (* <- lang_ru;; *);
+	              [Subject domain of frameworks of programming language dart]
+	              (* <- lang_en;; *);
+
+	
+<- subject_domain;
+
+//-> rrel_maximum_studied_object_class: subject_domain_of_programming_language_dart;
+
+-> rrel_not_maximum_studied_object_class:
+		concept_angel_framework;
+		concept_aqueduct_framework;
+		concept_express_framework;
+		concept_flutter_framework;
+		concept_force_framework;
+		concept_jaguar_framework;
+		concept_redstone_framework;
+		concept_shelf_framework;
+		concept_start_framework;
+		concept_stream_framework;
+		concept_stream_framework;
+		concept_vane_framework;;
+
+

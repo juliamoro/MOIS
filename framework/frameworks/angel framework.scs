@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_angel_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_standart_function;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_code_sharing;;
+sc_node_not_relation -> concept_scalability;;
+
+sc_node_norole_relation -> nrel_consistently_provide;;
+sc_node_norole_relation -> nrel_aimed;;
+
+concept_angel_framework => nrel_main_idtf: [Angel framework](* <- lang_ru;; *);;
+concept_angel_framework => nrel_main_idtf: [Angel framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_angel_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Angel – это фреймворк языка программирования Dart для последовательного предоставления стандартных функций.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Angel framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_framework;;
+	  -> concept_standart_function;;
+	  -> concept_programming_language_Dart;;
+          -> nrel_consistently_provide;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_angel_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Нацелен на совместное использование кода и масштабируемость.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Angel framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_aimed;;
+	   -> concept_code_sharing;;
+	   -> concept_scalability;;
+
+	*);;
+*);;

@@ -1,0 +1,53 @@
+sc_node_not_relation -> concept_SQLite_database;;
+
+sc_node_not_relation -> concept_database;;
+sc_node_not_relation -> concept_system;;
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_program;;
+sc_node_not_relation -> concept_engine;;
+sc_node_not_relation -> concept_integral_part;;
+sc_node_not_relation -> concept_program;;
+
+sc_node_norole_relation -> nrel_embed;;
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_present;;
+sc_node_norole_relation -> nrel_link;;
+sc_node_norole_relation -> nrel_become;;
+
+concept_SQLite_database => nrel_main_idtf: [SQLite база данных](* <- lang_ru;; *);;
+concept_SQLite_database => nrel_main_idtf: [SQLite database](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_SQLite_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[SQLite – встраиваемая система управления базами данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (SQLite база данных)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	   -> concept_database;;
+	   -> concept_system;;
+	   -> nrel_embed;;
+	   -> nrel_control;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_SQLite_database;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Представляет собой библиотеку, с которой программа компонуется, и движок становится составной частью программы.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(SQLite база данных.)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	   -> concept_library;;
+	   -> concept_program;;
+	   -> concept_engine;;
+	   -> concept_integral_part;;
+	   -> concept_program;;
+    	   -> concept_library;;
+	   -> concept_program;;
+	   -> concept_engine;;
+	   -> concept_integral_part;;
+	   -> concept_program;;
+	*);;
+*);;

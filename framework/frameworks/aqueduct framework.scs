@@ -1,0 +1,53 @@
+sc_node_not_relation -> concept_aqueduct_framework;;
+
+sc_node_not_relation -> concept_framework;;
+sc_node_not_relation -> concept_HTTP_server;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_HTTP_request;;
+sc_node_not_relation -> concept_object_relational_mapping;;
+sc_node_not_relation -> concept_documentation;;
+
+sc_node_norole_relation -> nrel_consists_of;;
+sc_node_norole_relation -> nrel_handling;;
+sc_node_norole_relation -> nrel_routing;;
+sc_node_norole_relation -> nrel_authentication;;
+sc_node_norole_relation -> nrel_authorization;;
+
+concept_aqueduct_framework => nrel_main_idtf: [Aqueduct framework](* <- lang_ru;; *);;
+concept_aqueduct_framework => nrel_main_idtf: [Aqueduct framework](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_aqueduct_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Aqueduct – это фреймворк HTTP-сервера языка программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Aqueduct framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> concept_framework;;
+	   -> concept_HTTP_server;;
+	   -> concept_programming_language_Dart;;
+
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_aqueduct_framework;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Состоит из библиотек для обработки и маршрутизации HTTP-запросов, объектно-реляционного сопоставления (ORM), аутентификации, авторизации и документации.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Aqueduct framework)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> concept_library;;
+	   -> concept_HTTP_request;;
+	   -> concept_object_relational_mapping;;
+	   -> nrel_authentication;;
+	   -> nrel_authorization;;
+	   -> concept_documentation;;
+	   -> nrel_consists_of;;
+	   -> nrel_handling;;
+	   -> nrel_routing;;
+
+	*);;
+*);;

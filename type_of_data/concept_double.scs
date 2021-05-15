@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_double;;
+
+sc_node_not_relation -> concept_type_of_data;;
+sc_node_not_relation -> concept_floating_point;;
+sc_node_not_relation -> concept_bit;;
+sc_node_not_relation -> concept_byte;;
+sc_node_not_relation -> concept_64;;
+sc_node_not_relation -> concept_8;;
+sc_node_not_relation -> concept_memory;;
+
+sc_node_norole_relation -> nrel_hold;;
+
+concept_double => nrel_main_idtf: [Double](* <- lang_ru;; *);;
+concept_double => nrel_main_idtf: [Double](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_double;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Double – тип данных с плавающей точкой.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Double)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> concept_type_of_data;;
+	   -> concept_floating_point;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_double;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Занимает в памяти 64 бита, или 8 байт.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Double)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(* 
+	 -> nrel_hold;;
+	 -> concept_bit;;
+	 -> concept_byte;;
+	 -> concept_64;;
+	 -> concept_8;;
+	 -> concept_memory;;
+
+	*);;
+*);;

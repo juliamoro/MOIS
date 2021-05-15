@@ -1,0 +1,47 @@
+sc_node_norole_relation -> concept_Runes;;
+
+//concept_Runes => nrel_system_idtf: [concept_Runes];;
+concept_Runes => nrel_idtf: [Runes*](*<- lang_en;;*);;
+concept_Runes => nrel_idtf: [Runes*](*<- lang_ru;;*);;
+concept_Runes => nrel_main_idtf: [Runes](*<- lang_en;;*);;
+concept_Runes=> nrel_main_idtf: [Runes](* <- lang_ru;; *);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Runes;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Runes - это последовательность символов в кодировке Unicode.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Runes*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_Unicode;;
+			-> concept_symbol;;
+            -> nrel_sequence;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Runes;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Для определения значения типа Runes пременяется конструктор данного типа.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Runes*)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+		    ->nrel_used;;
+            ->concept_constructor;;
+            ->concept_type;;
+        *);;
+*);;
+
+concept_Runes<=nrel_inclusion: concept_data_type;;
+nerl_inclusion<-sc_node_norole_relation;;
+
+concept_Runes -> rrel_example: u041F ;;
+rrel_example <-sc_node_role_relation ;;

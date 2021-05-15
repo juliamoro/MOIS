@@ -1,0 +1,41 @@
+subject_domain_of_programming_language_dart
+	=> nrel_main_idtf:
+	              [Предметная область языка программирования dart]
+	              (* <- lang_ru;; *);
+	              [Subject domain of programming language dart]
+	              (* <- lang_en;; *);
+
+=> nrel_private_subject_domain:
+                  subject_domain_of_databases_of_programming_language_dart; 
+			      subject_domain_of_packages_of_programming_language_dart; 
+                  subject_domain_of_libraries_of_programming_language_dart; 
+                  subject_domain_of_classes_of_programming_language_dart; 
+                  subject_domain_of_key_words_of_programming_language_dart; 
+			      subject_domain_of_operators_of_programming_language_dart; 
+			      subject_domain_of_access_modifiers_of_programming_language_dart;
+	              subject_domain_of_types_of_data_of_programming_language_dart; 
+                  subject_domain_of_frameworks_of_programming_language_dart;
+                  subject_domain_of_widgets_of_programming_language_dart;
+
+	
+<= nrel_private_subject_domain:
+	              subject_domain_of_programming_languages;
+	
+-> rrel_maximum_studied_object_class: 
+				  concept_database_of_programming_language_dart;
+                  concept_package_of_programming_language_dart;
+                  concept_library_of_programming_language_dart;
+                  concept_class_of_programming_language_dart;
+                  concept_key_word_of_programming_language_dart;
+                  concept_access_modifier_of_programming_language_dart;
+                  concept_type_of_data_of_programming_language_dart;
+                  concept_framework_of_programming_language_dart;
+                  concept_widget_of_programming_language_dart;
+
+
+-> rrel_explored_relation:
+                  nrel_key_word_of_programming_language_dart;
+                  nrel_operator_of_programming_language_dart;
+                  
+       
+<- subject_domain;;

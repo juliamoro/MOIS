@@ -1,0 +1,48 @@
+sc_node_not_relation-> concept_ClipOval_widget;;
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_oval;;
+sc_node_not_relation-> concept_child;;
+sc_node_not_relation-> concept_axis_aligned_oval;;
+sc_node_not_relation-> concept_layout_dimension;;
+
+
+sc_node_norole_relation -> nrel_clip;;
+sc_node_norole_relation -> nrel_use;;
+sc_node_norole_relation -> nrel_paint;;
+sc_node_norole_relation -> nrel_prevent;;
+
+
+concept_ClipOval_widget=> nrel_main_idtf: [Виджет ClipOval](*<- lang_ru;;*);;
+concept_ClipOval_widget=> nrel_main_idtf: [ClipOval widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_ClipOval_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет ClipOval - виджет, который обрезает свой дочерний элемент, используя овал. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет ClipOval)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_oval;
+    concept_child;
+    nrel_clip;
+    nrel_use
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_ClipOval_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[По умолчанию вписывает выровненный по оси овал в размеры макета и не позволяет своему дочернему элементу рисовать за пределами этого овала. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет ClipOval)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_axis_aligned_oval;
+    concept_layout_dimension;
+    concept_child;
+    nrel_inscribe_by_default;
+    nrel_paint;
+    nrel_prevent
+};;
+*);;

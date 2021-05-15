@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_int;;
+
+sc_node_not_relation -> concept_type_of_data;;
+sc_node_not_relation -> concept_integer;;
+sc_node_not_relation -> concept_byte;;
+sc_node_not_relation -> concept_4;;
+sc_node_not_relation -> concept_8;;
+sc_node_not_relation -> concept_memory;;
+
+sc_node_norole_relation -> nrel_hold;;
+sc_node_norole_relation -> nrel_can;;
+
+concept_int => nrel_main_idtf: [Int](* <- lang_ru;; *);;
+concept_int => nrel_main_idtf: [Int](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_int;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Int – целочисленный тип данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Int)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> concept_type_of_data;;
+	   -> concept_integer;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_int;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Может занимать 4 или 8 байт в памяти.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Int)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(* 
+	 -> nrel_hold;;
+ 	 -> nrel_can;;
+	 -> concept_byte;;
+	 -> concept_8;;
+	 -> concept_4;;
+	 -> concept_memory;;
+
+
+	*);;
+*);;

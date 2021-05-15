@@ -1,0 +1,44 @@
+sc_node_not_relation-> concept_Theme_widget;;
+
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_theme;;
+sc_node_not_relation-> concept_descendant_widget;;
+sc_node_not_relation-> concept_color;;
+sc_node_not_relation-> concept_typographic_choice;;
+sc_node_not_relation-> concept_application;;
+
+sc_node_norole_relation -> nrel_apply;;
+sc_node_norole_relation -> nrel_describe;;
+
+concept_Theme_widget=> nrel_main_idtf: [Виджет Theme](*<- lang_ru;;*);;
+concept_Theme_widget=> nrel_main_idtf: [Theme widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Theme_widget;;
+<= nrel_sc_Theme_translation: ...(*->rrel_example:[Виджет Theme - виджет, который применяет тему к дочерним виджетам. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет Theme)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_theme;
+    concept_descendant_widget;
+    nrel_apply
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_Theme_widget ;;
+<= nrel_sc_Theme_translation: ...(*->rrel_example:[Тема описывает цвета и типографский выбор приложения. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет Theme)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_color;
+    concept_typographic_choice;
+    concept_theme;
+    concept_application;
+    nrel_describe
+};;
+*);;

@@ -1,0 +1,48 @@
+sc_node_not_relation-> concept_RichText_widget;;
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_multiple_different_styles;;
+sc_node_not_relation-> concept_text;;
+sc_node_not_relation-> concept_TextRich_constructor;;
+sc_node_not_relation-> concept_multiple_spans;;
+sc_node_not_relation-> concept_specified_style;;
+
+sc_node_norole_relation -> nrel_display;;
+sc_node_norole_relation -> nrel_allow;;
+sc_node_norole_relation -> nrel_style_by_default;;
+sc_node_norole_relation -> nrel_use_per_span;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_RichText_widget=> nrel_main_idtf: [Виджет RichText](*<- lang_ru;;*);;
+concept_RichText_widget=> nrel_main_idtf: [RichText widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_RichText_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет RichText - виджет, который отображает текст, в котором используются несколько разных стилей. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет RichText)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_text;
+    concept_multiple_different_styles;
+    nrel_display;
+    nrel_use
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_RichText_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Конструктор TextRich позволяет стилизовать несколько диапазонов с использованием стиля текста по умолчанию, при этом разрешая использование определенных стилей для каждого. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет RichText)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_TextRich_constructor;
+    concept_multiple_spans;
+    concept_specified_style;
+    nrel_allow;
+    nrel_style_by_default;
+    nrel_use_per_span
+};;
+*);;

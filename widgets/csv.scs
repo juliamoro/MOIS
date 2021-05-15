@@ -1,0 +1,50 @@
+sc_node_not_relation-> concept_CustomScrollView_widget;;
+
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> custom_scroll_effect;;
+sc_node_not_relation-> concept_sliver;;
+sc_node_not_relation-> concept_list;;
+sc_node_not_relation-> concept_grid;;
+sc_node_not_relation-> concept_expanding_header;;
+
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_supply;;
+sc_node_norole_relation -> nrel_let;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_CustomScrollView_widget=> nrel_main_idtf: [Виджет CustomScrollView](*<- lang_ru;;*);;
+concept_CustomScrollView_widget=> nrel_main_idtf: [CustomScrollView widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_CustomScrollView_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет CustomScrollView - виджет, который создает настраиваемый эффект прокрутки с помощью полос. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет CustomScrollView)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_custom_scroll_effect;
+    concept_sliver;
+    nrel_create;
+    nrel_use
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_CustomScrollView_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[CustomScrollView позволяет предоставлять ленты для создания различных эффектов прокрутки, таких как списки, сетки и расширяющиеся заголовки. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет CustomScrollView)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_sliver;
+    concept_custom_scroll_effect;
+    concept_list;
+    concept_grid;
+    concept_expanding_header;
+    nrel_supply;
+    nrel_create;
+    nrel_let
+};;
+*);;

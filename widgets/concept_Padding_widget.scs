@@ -1,0 +1,47 @@
+sc_node_not_relation-> concept_Padding_widget;;
+
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_given_padding;;
+sc_node_not_relation-> concept_child;;
+sc_node_not_relation-> concept_result;;
+sc_node_not_relation-> concept_transfer_of_restrictions;;
+sc_node_not_relation-> concept_arrangement;;
+sc_node_not_relation-> concept_small_size;;
+
+
+sc_node_norole_relation -> nrel_inset;;
+sc_node_norole_relation -> nrel_have;;
+
+concept_Padding_widget=> nrel_main_idtf: [Виджет Padding](*<- lang_ru;;*);;
+concept_Padding_widget=> nrel_main_idtf: [Padding widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Padding_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет Padding - виджет, который вставляет свой дочерний элемент по заданному заполнению. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет Padding)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_child;
+    concept_given_padding;
+    nrel_inset
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_Padding_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В результате передачи ограничений компоновки дочерний элемент будет иметь меньший размер. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет Padding)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_result;
+    concept_transfer_of_restrictions;
+    concept_arrangement;
+    concept_child;
+    concept_small_size;
+    nrel_have
+};;
+*);;

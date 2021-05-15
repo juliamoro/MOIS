@@ -1,0 +1,48 @@
+sc_node_norole_relation -> concept_bool;;
+
+//concept_bool => nrel_system_idtf: [concept_bool];;
+concept_bool => nrel_idtf: [bool*](*<- lang_ru;;*);;
+concept_bool => nrel_idtf: [bool*](*<- lang_en;;*);;
+concept_bool => nrel_main_idtf: [bool](*<- lang_en;;*);;
+concept_bool=> nrel_main_idtf: [bool](* <- lang_ru;; *);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bool;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [bool - тип данных,представляющий логические значения в Dart.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(bool*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_data_type;;
+            -> nrel_representing;;
+            -> concept_Dart;;
+			-> concept_boolean_values;;
+
+        *);;
+*);;
+
+concept_bool<=nrel_inclusion: concept_data_type;;
+nerl_inclusion<-sc_node_norole_relation;;
+
+concept_bool -> rrel_example: bool_a ;;
+rrel_example <-sc_node_role_relation ;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bool;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Тип bool представляет два значения: true и false.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(bool*)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+            ->concept_true;;
+			->concept_false;;
+			->concept_values;;
+            ->nrel_presents;;
+        *);;
+*);;

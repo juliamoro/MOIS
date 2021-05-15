@@ -1,0 +1,44 @@
+sc_node_not_relation-> concept_RotatedBox_widget;;
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_integral_number;;
+sc_node_not_relation-> concept_child;;
+sc_node_not_relation-> concept_quarter_turn;;
+sc_node_not_relation-> concept_entire_box;;
+sc_node_not_relation-> concept_space;;
+
+sc_node_norole_relation -> nrel_rotate;;
+sc_node_norole_relation -> nrel_take_up;;
+
+concept_RotatedBox_widget=> nrel_main_idtf: [Виджет RotatedBox](*<- lang_ru;;*);;
+concept_RotatedBox_widget=> nrel_main_idtf: [RotatedBox widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_RotatedBox_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет RotatedBox - виджет, который поворачивает свой дочерний элемент на целое число четверть-оборотов. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет RotatedBox)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_integral_number;
+    concept_child;
+    concept_quarter_turn;
+    nrel_rotate
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_RotatedBox_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Весь повернутый блок занимает столько места, сколько требуется повернутому дочернему элементу. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет RotatedBox)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_entire_box;
+    concept_space;
+    concept_child;
+    nrel_rotate;
+    nrel_take_up
+};;
+*);;

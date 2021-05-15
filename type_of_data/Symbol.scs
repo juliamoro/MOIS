@@ -1,0 +1,43 @@
+sc_node_norole_relation -> concept_Symbol;;
+
+//concept_Symbol => nrel_system_idtf: [concept_Symbol];;
+concept_Symbol => nrel_main_idtf: [Symbol](*<- lang_en;;*);;
+concept_Symbol=> nrel_main_idtf: [Symbol](* <- lang_ru;; *);;
+concept_Symbol => nrel_idtf: [Symbol*](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Symbol;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Symbol*-это тип данных,представляет оператор или идентификатор,определенные в программе.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Symbol*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+            -> concept_data_type;;
+            -> nrel_presents;;
+            -> concept_operator;;
+			-> concept_identifier;;
+			-> nrel_presents;;
+			-> concept_program;;
+        *);;
+*);;
+
+concept_Symbol<=nrel_inclusion: concept_data_type;;
+nerl_inclusion<-sc_node_norole_relation;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Symbol;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Применяются для ссылки на какие-то элементы API](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Symbol*)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+            -> concept_links;;
+            ->concept_API_elements;;
+        *);;
+*);;

@@ -1,0 +1,40 @@
+sc_node_not_relation-> concept_PageView_widget;;
+
+sc_node_not_relation-> concept_scrollable_list;;
+sc_node_not_relation-> concept_child;;
+sc_node_not_relation-> concept_page_view;;
+sc_node_not_relation-> concept_size;;
+sc_node_not_relation-> concept_viewport;;
+
+sc_node_norole_relation -> nrel_work_by_page;;
+sc_node_norole_relation -> nrel_force;;
+
+concept_PageView_widget=> nrel_main_idtf: [Виджет PageView](*<- lang_ru;;*);;
+concept_PageView_widget=> nrel_main_idtf: [PageView widget](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_PageView_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет PageView - прокручиваемый список, который работает постранично. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет PageView)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_scrollable_list;
+    nrel_work_by_page
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_PageView_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Каждый дочерний элемент представления страницы должен иметь тот же размер, что и область просмотра. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет PageView)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_child;
+    concept_page_view;
+    concept_size;
+    concept_viewport;
+    nrel_force
+};;
+*);;

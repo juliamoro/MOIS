@@ -1,0 +1,50 @@
+sc_node_not_relation-> concept_Text_widget;;
+
+sc_node_not_relation-> concept_widget;;
+sc_node_not_relation-> concept_text;;
+sc_node_not_relation-> concept_one_style;;
+sc_node_not_relation-> concept_style_argument;;
+sc_node_not_relation-> concept_property;;
+sc_node_not_relation-> concept_text;;
+sc_node_not_relation-> concept_DefaultTextStyle_style;;
+
+sc_node_norole_relation -> nrel_optional;;
+sc_node_norole_relation -> nrel_no;;
+sc_node_norole_relation -> nrel_use;;
+sc_node_norole_relation -> nrel_display;;
+sc_node_norole_relation -> nrel_use;;
+
+concept_Text_widget=> nrel_main_idtf: [Виджет Text*](*<- lang_ru;;*);;
+concept_Text_widget=> nrel_main_idtf: [Text widget*](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Text_widget;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет Text - виджет, который отображает текст, в котором используется один стиль. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет Text*)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget;
+    concept_text;
+    concept_one_style;
+    nrel_display;
+    nrel_use
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_Text_widget ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аргумент стиля не является обязательным, если этот параметр опущен, в тексте будет использоваться стиль DefaultTextStyle. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет Text*)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_style_argument;
+    concept_property;
+    concept_text;
+    concept_DefaultTextStyle_style;
+    nrel_optional;
+    nrel_no;
+    nrel_use
+};;
+*);;

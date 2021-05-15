@@ -1,0 +1,45 @@
+sc_node_not_relation-> concept_Image_class;;
+
+sc_node_not_relation-> concept_widget_class;;
+sc_node_not_relation-> concept_picture;;
+sc_node_not_relation-> concept_Image_constructor;;
+sc_node_not_relation-> concept_Image_asset_constructor;;
+sc_node_not_relation-> concept_Image_network_constructor;;
+sc_node_not_relation-> concept_Image_file_constructor;;
+sc_node_not_relation-> concept_Image_memory_constructor;;
+
+sc_node_norole_relation -> nrel_are;;
+sc_node_norole_relation -> nrel_display;;
+
+
+concept_Image_class=> nrel_main_idtf: [Виджет-класс Image](*<- lang_ru;;*);;
+concept_Image_class=> nrel_main_idtf: [Image class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Image_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет-класс Image - виджет-класс для отображения изображений. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет-класс Image)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget_class;
+    concept_picture;
+    nrel_display
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_Image_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Конструкторами класса являются Image(), Image.asset(), Image.network(), Image.file(), Image.memory() . ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет-класс Image)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_Image_constructor;
+    concept_Image_asset_constructor;
+    concept_Image_network_constructor;
+    concept_Image_file_constructor;
+    concept_Image_memory_constructor;
+    nrel_are
+};;
+*);;

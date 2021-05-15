@@ -1,0 +1,39 @@
+sc_node_not_relation-> concept_ButtonTheme_class;;
+
+sc_node_not_relation-> concept_button_size;;
+sc_node_not_relation-> concept_widget_class;;
+sc_node_not_relation-> concept_customization;;
+sc_node_not_relation-> concept_color;;
+sc_node_not_relation-> concept_button_geometry;;
+
+sc_node_norole_relation -> nrel_change_by_default;;
+
+concept_ButtonTheme_class=> nrel_main_idtf: [Виджет-класс ButtonTheme](*<- lang_ru;;*);;
+concept_ButtonTheme_class=> nrel_main_idtf: [ButtonTheme class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_ButtonTheme_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет-класс ButtonTheme - виджет-класс для настройки цвета и геометрии кнопок. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет-класс ButtonTheme)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget_class;
+    concept_customization;
+    concept_color;
+    concept_button_geometry
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_ButtonTheme_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[С помощью ButtonTheme можно изменить размер кнопок по умолчанию. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет-класс ButtonTheme)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_button_size;
+    nrel_change_by_default
+};;
+*);;
+

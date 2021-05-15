@@ -1,0 +1,47 @@
+sc_node_not_relation-> concept_Container_class;;
+
+sc_node_not_relation-> concept_widget_class;;
+sc_node_not_relation-> concept_display_property;;
+sc_node_not_relation-> concept_positioning_property;;
+sc_node_not_relation-> concept_dimension_property;;
+sc_node_not_relation-> concept_parameter_width;;
+sc_node_not_relation-> concept_parameter_height;;
+sc_node_not_relation-> concept_parameter_constraints;;
+sc_node_not_relation-> concept_container_size;;
+
+sc_node_norole_relation -> nrel_combine;;
+sc_node_norole_relation -> nrel_override;;
+
+concept_Container_class=> nrel_main_idtf: [Виджет-класс Container](*<- lang_ru;;*);;
+concept_Container_class=> nrel_main_idtf: [Container class](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_Container_class;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виджет-класс Container - виджет-класс, который сочетает в себе свойства: отображения, позиционирования и размерности. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виджет-класс Container)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_widget_class;
+    concept_display_property;
+    concept_positioning_property;
+    concept_dimension_property;
+    nrel_combine
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_Container_class ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Параметры width, height и constraints переопределяют размер контейнера. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виджет-класс Container)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_parameter_width;
+    concept_parameter_height;
+    concept_parameter_constraints;
+    concept_container_size;
+    nrel_override
+};;
+*);;
+

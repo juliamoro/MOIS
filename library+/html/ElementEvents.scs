@@ -1,0 +1,36 @@
+sc_ElementEvents_not_relation -> concept_ElementEvents;;
+
+concept_ElementEvents => nrel_system_idtf: [concept_ElementEvents];;
+concept_ElementEvents => nrel_main_idtf: [ElementEvents](*<- lang_ru;;*);;
+concept_ElementEvents => nrel_idtf: [ElementEvents](*<- lang_ru;;*);;
+concept_ElementEvents => nrel_idtf: [ElementEvents](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ElementEvents;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс ElementEvents представляет множество возможных событий, реализуемых для элемента иерархии документа Element.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ElementEvents)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_Element;;
+->concept_element;;
+->concept_events;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ElementEvents;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс ElementEvents есть метод abort и др.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.ElementEvents)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

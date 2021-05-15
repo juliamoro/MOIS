@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_Timer;;
+
+concept_Timer => nrel_system_idtf: [concept_Timer];;
+concept_Timer => nrel_main_idtf: [Timer](*<- lang_ru;;*);;
+concept_Timer => nrel_idtf: [Timer](*<- lang_ru;;*);;
+concept_Timer => nrel_idtf: [Timer](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Timer;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Timer описывает методы работы с простым таймером.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Timer)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_method;;
+->concept_timer;;
+
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Timer;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В Timer обеспечивают выполнения пользовательских функций через заданные интервалы времени.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Timer)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_custom_functions;;
+->concept_time_intervals;;
+        *);;
+*);;

@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_comparable;;
+
+concept_comparable => nrel_system_idtf: [concept_comparable];;
+concept_comparable => nrel_main_idtf: [Comparable](*<- lang_ru;;*);;
+concept_comparable => nrel_idtf: [Comparable](*<- lang_ru;;*);;
+concept_comparable => nrel_idtf: [Comparable](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_comparable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Comparable предназначен для определения функции сравнения объектов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Comparable)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_interface;;
+->concept_object;;
+->nrel_function_comparison;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_comparable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Comparable используется в нескольких интерфейсах базовой библиотеки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Comparable)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_interface;;
+->concept_API;;
+->nrel_used;;
+        *);;
+*);;

@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_Socket;;
+
+concept_Socket => nrel_system_idtf: [concept_Socket];;
+concept_Socket => nrel_main_idtf: [Socket](*<- lang_ru;;*);;
+concept_Socket => nrel_idtf: [Socket](*<- lang_ru;;*);;
+concept_Socket => nrel_idtf: [Socket](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Socket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Socket TCP-соединение между двумя сокетами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Socket)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_TCP_connection;;
+		->concept_socket;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Socket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Клиенты и серверы используют Socket для связи по протоколу TCP.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Socket)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_clients;;
+->concept_servers;;
+->nrel_communicate;;
+->concept_TCP_protocol;;
+        *);;
+*);;

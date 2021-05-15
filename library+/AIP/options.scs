@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_options;;
+
+concept_options => nrel_system_idtf: [concept_options];;
+concept_options => nrel_main_idtf: [Options](*<- lang_ru;;*);;
+concept_options => nrel_idtf: [Options](*<- lang_ru;;*);;
+concept_options => nrel_idtf: [Options](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_options;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Options позволяет получить доступ к аргументам, которые были переданы текущему изоляту.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Options)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_arguments ;;
+->concept_isolate;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_options;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Options есть конструктор.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Options)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_constructor;;
+        *);;
+*);;

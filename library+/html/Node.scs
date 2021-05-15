@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_Node;;
+
+concept_Node => nrel_system_idtf: [concept_Node];;
+concept_Node => nrel_main_idtf: [Node](*<- lang_ru;;*);;
+concept_Node => nrel_idtf: [Node](*<- lang_ru;;*);;
+concept_Node => nrel_idtf: [Node](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Node;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Node представляет отдельный узел в иерархии DOM и описывает основные функции для работы с узлами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Node)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_hierarchies_DOM;;
+->concept_knot;;
+->concept_function;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Node;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Node есть метод settext и др.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Node)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

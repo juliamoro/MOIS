@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_Platform;;
+
+concept_Platform => nrel_system_idtf: [concept_Platform];;
+concept_Platform => nrel_main_idtf: [Platform](*<- lang_ru;;*);;
+concept_Platform => nrel_idtf: [Platform](*<- lang_ru;;*);;
+concept_Platform => nrel_idtf: [Platform](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Platform;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Platform описывает методы определения особенностей текущей системы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Platform)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_determination_method;;
+->concept_systems;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Platform;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Platform есть конструктор.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Platform)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_constructor;;
+        *);;
+*);;

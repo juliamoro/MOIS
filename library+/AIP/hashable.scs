@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_hashable;;
+
+concept_hashable => nrel_system_idtf: [concept_hashable];;
+concept_hashable => nrel_main_idtf: [Hashable](*<- lang_ru;;*);;
+concept_hashable => nrel_idtf: [Hashable](*<- lang_ru;;*);;
+concept_hashable => nrel_idtf: [Hashable](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hashable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Hashable предназначен для определения функции расчета хеш-кода объектов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Hashable)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_interface;;
+->concept_object;;
+->nrel_function_calculation;;
+->concept_hash_code;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_hashable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Hashable содержит всего один метод, который и должен реализовывать хэш функцию.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Hashable)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+->concept_hash_function;;
+->nrel_realize;;
+        *);;
+*);;

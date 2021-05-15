@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_File;;
+
+concept_File => nrel_system_idtf: [concept_File];;
+concept_File => nrel_main_idtf: [File](*<- lang_ru;;*);;
+concept_File => nrel_idtf: [File](*<- lang_ru;;*);;
+concept_File => nrel_idtf: [File](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_File;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [File описывает методы работы с файлами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(File)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_method;;
+->concept_files;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_File;;
+    <= nrel_sc_text_translation: ...
+        (* 
+            -> [В File описаны такие базовые методы работы с файлами как: создание, удаление, переименование и т.д](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.File)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+->nrel_create;;
+->nrel_rename;;
+->nrel_deleting;;
+        *);;
+*);;

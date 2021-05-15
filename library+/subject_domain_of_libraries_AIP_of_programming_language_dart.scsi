@@ -1,0 +1,28 @@
+subject_domain_of_libraries_AIP_of_programming_language_dart
+	=> nrel_main_idtf:[Предметная область библиотеки AIP языка программирования dart.](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of libraries AIP of programming language dart.](* <- lang_en;; *);
+<- subject_domain;
+
+
+-> rrel_not_maximum_studied_object_class:
+		concept_BadNumberFormatException;
+        concept_bytearray;
+        concept_class_clock;
+        concept_ClosureArgumentMismatchException;
+        concept_comparable;
+        concept_completer;
+        concept_duration;
+        concept_EmptyQueueException;
+        concept_exception;
+        concept_expectexception;
+        concept_hashable;
+        concept_IllegalAccessException;
+        concept_IllegalJSRegExpException;
+        concept_IntegerDivisionByZeroException;
+        concept_iterable;
+        concept_match;
+        concept_NoMoreElementsException;
+        concept_NoSuchMethodException;
+        concept_options;
+        concept_regexp;
+        concept_timezone;;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_IntegerDivisionByZeroException;;
+
+concept_IntegerDivisionByZeroException => nrel_system_idtf: [concept_IntegerDivisionByZeroException];;
+concept_IntegerDivisionByZeroException => nrel_main_idtf: [IntegerDivisionByZeroException](*<- lang_ru;;*);;
+concept_IntegerDivisionByZeroException => nrel_idtf: [IntegerDivisionByZeroException](*<- lang_ru;;*);;
+concept_IntegerDivisionByZeroException => nrel_idtf: [IntegerDivisionByZeroException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_IntegerDivisionByZeroException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс IntegerDivisionByZeroException представляет исключение,связанное с делением целых чисел на ноль.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(IntegerDivisionByZeroException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_whole_numbers;;
+->nrel_division;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_IntegerDivisionByZeroException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс IntegerDivisionByZeroException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.IntegerDivisionByZeroException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

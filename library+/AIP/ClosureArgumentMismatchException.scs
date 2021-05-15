@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_ClosureArgumentMismatchException;;
+
+concept_ClosureArgumentMismatchException => nrel_system_idtf: [concept_ClosureArgumentMismatchException];;
+concept_ClosureArgumentMismatchException => nrel_main_idtf: [ClosureArgumentMismatchException](*<- lang_ru;;*);;
+concept_ClosureArgumentMismatchException => nrel_idtf: [ClosureArgumentMismatchException](*<- lang_ru;;*);;
+concept_ClosureArgumentMismatchException => nrel_idtf: [ClosureArgumentMismatchException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ClosureArgumentMismatchException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс ClosureArgumentMismatchException представляет исключение, связанное с вызовом анонимной функции, с неверным количеством аргументов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ClosureArgumentMismatchException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_anonymous_function;;
+->concept_argument;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ClosureArgumentMismatchException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс ClosureArgumentMismatchException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.ClosureArgumentMismatchException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

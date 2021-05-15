@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_iterable;;
+
+concept_iterable => nrel_system_idtf: [concept_iterable];;
+concept_iterable => nrel_main_idtf: [Iterable](*<- lang_ru;;*);;
+concept_iterable => nrel_idtf: [Iterable](*<- lang_ru;;*);;
+concept_iterable => nrel_idtf: [Iterable](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_iterable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Iterable является базовым классом для представления коллекций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Iterable)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_class;;
+->concept_collections;;
+->nrel_representation;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_iterable;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [На основе Iterable построен весь каркас системных коллекций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Iterable)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_system_collections;;
+        *);;
+*);;

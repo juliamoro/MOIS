@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_NoMoreElementsException;;
+
+concept_NoMoreElementsException => nrel_system_idtf: [concept_NoMoreElementsException];;
+concept_NoMoreElementsException => nrel_main_idtf: [NoMoreElementsException](*<- lang_ru;;*);;
+concept_NoMoreElementsException => nrel_idtf: [NoMoreElementsException](*<- lang_ru;;*);;
+concept_NoMoreElementsException => nrel_idtf: [NoMoreElementsException](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_NoMoreElementsException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс NoMoreElementsException представляет исключение, вызываемое итератором, в случае, когда больше нет элементов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(NoMoreElementsException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_iterator;;
+->concept_element;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_NoMoreElementsException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс NoMoreElementsException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.NoMoreElementsException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

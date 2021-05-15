@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_NoSuchMethodException;;
+
+concept_NoSuchMethodException => nrel_system_idtf: [concept_NoSuchMethodException];;
+concept_NoSuchMethodException => nrel_main_idtf: [NoSuchMethodException](*<- lang_ru;;*);;
+concept_NoSuchMethodException => nrel_idtf: [NoSuchMethodException](*<- lang_ru;;*);;
+concept_NoSuchMethodException => nrel_idtf: [NoSuchMethodException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_NoSuchMethodException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс NoSuchMethodException представляет исключение, связанное с попыткой вызвать несуществующий метод.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(NoSuchMethodException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_nonexistent_method;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_NoSuchMethodException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс NoSuchMethodException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.NoSuchMethodException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

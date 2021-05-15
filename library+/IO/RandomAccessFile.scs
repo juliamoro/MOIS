@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_RandomAccessFile;;
+
+concept_RandomAccessFile => nrel_system_idtf: [concept_RandomAccessFile];;
+concept_RandomAccessFile => nrel_main_idtf: [RandomAccessFile](*<- lang_ru;;*);;
+concept_RandomAccessFile => nrel_idtf: [RandomAccessFile](*<- lang_ru;;*);;
+concept_RandomAccessFile => nrel_idtf: [RandomAccessFile](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_RandomAccessFile;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [RandomAccessFile описывает методы для операций ввода/вывода и произвольного доступа к файлам.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(RandomAccessFile)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_method;;
+		->concept_io_operations;;
+->concept_files;;
+->concept_access_operations;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_RandomAccessFile;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В RandomAccessFile описаны такие операции ввода/вывода как запись, чтение, удаление и т.д](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.RandomAccessFile)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->nrel_io_operations;;
+->nrel_writing;;
+->nrel_reading;;
+->nrel_deleting;;
+        *);;
+*);;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_IllegalAccessException;;
+
+concept_IllegalAccessException => nrel_system_idtf: [concept_IllegalAccessException];;
+concept_IllegalAccessException => nrel_main_idtf: [IllegalAccessException](*<- lang_ru;;*);;
+concept_IllegalAccessException => nrel_idtf: [IllegalAccessException](*<- lang_ru;;*);;
+concept_IllegalAccessException => nrel_idtf: [IllegalAccessException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_IllegalAccessException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс IllegalAccessException представляет исключение, связанное с попыткой изменить неизменяемый объект.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(IllegalAccessException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_immutable_object;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_IllegalAccessException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс IllegalAccessException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.IllegalAccessException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

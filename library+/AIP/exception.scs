@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_exception;;
+
+concept_exception => nrel_system_idtf: [concept_exception];;
+concept_exception => nrel_main_idtf: [Exception](*<- lang_ru;;*);;
+concept_exception => nrel_idtf: [Exception](*<- lang_ru;;*);;
+concept_exception => nrel_idtf: [Exception](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_exception;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Exception представляет исключение, и является базовым для всех системных исключений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Exception)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_system_exceptions;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_exception;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Exception есть конструктор.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Exception)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_constructor;;
+        *);;
+*);;

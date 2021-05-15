@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_class_clock;;
+
+concept_class_clock => nrel_system_idtf: [concept_class_clock];;
+concept_class_clock => nrel_main_idtf: [Class Clock](*<- lang_ru;;*);;
+concept_class_clock => nrel_idtf: [Class Clock](*<- lang_ru;;*);;
+concept_class_clock => nrel_idtf: [Class Clock](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_class_clock;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс Clock обеспечивает доступ к системному таймеру.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Class Clock)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_system_timer;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_class_clock;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Class Clock есть свои методы:frequency и now.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Class Clock)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+->nrel_now;;
+->nrel_frequency;;
+        *);;
+*);;

@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_EmptyQueueException;;
+
+concept_EmptyQueueException => nrel_system_idtf: [concept_EmptyQueueException];;
+concept_EmptyQueueException => nrel_main_idtf: [EmptyQueueException](*<- lang_ru;;*);;
+concept_EmptyQueueException => nrel_idtf: [EmptyQueueException](*<- lang_ru;;*);;
+concept_EmptyQueueException => nrel_idtf: [EmptyQueueException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_EmptyQueueException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс EmptyQueueException представляет исключение, связанное с обращению к элементам пустой Queue.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(EmptyQueueException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_queue;;
+->concept_element;;
+->nrel_appeal;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_EmptyQueueException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс EmptyQueueException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.EmptyQueueException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

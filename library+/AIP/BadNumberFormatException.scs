@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_BadNumberFormatException;;
+
+concept_BadNumberFormatException => nrel_system_idtf: [concept_BadNumberFormatException];;
+concept_BadNumberFormatException => nrel_main_idtf: [BadNumberFormatException](*<- lang_ru;;*);;
+concept_BadNumberFormatException => nrel_idtf: [BadNumberFormatException](*<- lang_ru;;*);;
+concept_BadNumberFormatException => nrel_idtf: [BadNumberFormatException](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_BadNumberFormatException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс BadNumberFormatException представляет исключение, связанное с использованием числа в некорректном формате.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(BadNumberFormatException)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_exception;;
+->concept_namber;;
+->nrel_incorrect_format;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_BadNumberFormatException;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс BadNumberFormatException есть метод toString.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.BadNumberFormatException)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+        *);;
+*);;

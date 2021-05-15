@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_Directory;;
+
+concept_Directory => nrel_system_idtf: [concept_Directory];;
+concept_Directory => nrel_main_idtf: [Directory](*<- lang_ru;;*);;
+concept_Directory => nrel_idtf: [Directory](*<- lang_ru;;*);;
+concept_Directory => nrel_idtf: [Directory](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Directory;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Абстрактный класс Directory описывает методы работы с каталогами файловой системы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Directory)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_method;;
+		->concept_catalog;;
+->concept_file_system;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Directory;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В Directory описаны  базовые методы работы с папками как: создание,удаление,получения списка и т.д](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Directory)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_folder_methods;;
+->nrel_create;;
+->nrel_getlist;;
+->nrel_deleting;;
+        *);;
+*);;

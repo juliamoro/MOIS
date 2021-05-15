@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_bytearray;;
+
+concept_bytearray => nrel_system_idtf: [concept_bytearray];;
+concept_bytearray => nrel_main_idtf: [ByteArray](*<- lang_ru;;*);;
+concept_bytearray => nrel_idtf: [ByteArray](*<- lang_ru;;*);;
+concept_bytearray => nrel_idtf: [ByteArray](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bytearray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс ByteArray служит для представления байтовых массивов фиксированной длины.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ByteArray)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_byte_arrays;;
+->concept_fixed_length;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bytearray;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ В ByteArray предусмотрены методы для чтения и записи двоичных данных.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.ByteArray)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_method;;
+->concept_binary_data;;
+->nrel_reading;;
+->nrel_records;;
+        *);;
+*);;

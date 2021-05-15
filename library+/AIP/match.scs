@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_match;;
+
+concept_match => nrel_system_idtf: [concept_match];;
+concept_match => nrel_main_idtf: [Match](*<- lang_ru;;*);;
+concept_match => nrel_idtf: [Match](*<- lang_ru;;*);;
+concept_match => nrel_idtf: [Match](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_match;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Интерфейс Match представляет совпадение внутри строки с регулярным выражением.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Match)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_strings;;
+->concept_regular_expression;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_match;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В интерфейс Match есть свои константы:str и pattern.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Match)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_constants;;
+        *);;
+*);;

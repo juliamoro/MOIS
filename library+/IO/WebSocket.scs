@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_WebSocket;;
+
+concept_WebSocket => nrel_system_idtf: [concept_WebSocket];;
+concept_WebSocket => nrel_main_idtf: [WebSocket](*<- lang_ru;;*);;
+concept_WebSocket => nrel_idtf: [WebSocket](*<- lang_ru;;*);;
+concept_WebSocket => nrel_idtf: [WebSocket](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_WebSocket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [WebSocket объект двусторонней связи HTTP для клиентских или серверных приложений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(WebSocket)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_object;;
+		->concept_client_application;;
+		->concept_server_application;;
+		->concept_two_way_HTTP_communication;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_WebSocket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс WebSocket обеспечивает поддержку протокола веб-сокетов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.WebSocket)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+		->nrel_support;;
+->concept_web_socket_protocol;;
+        *);;
+*);;
+
+

@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_ServerSocket;;
+
+concept_ServerSocket => nrel_system_idtf: [concept_ServerSocket];;
+concept_ServerSocket => nrel_main_idtf: [ServerSocket](*<- lang_ru;;*);;
+concept_ServerSocket => nrel_idtf: [ServerSocket](*<- lang_ru;;*);;
+concept_ServerSocket => nrel_idtf: [ServerSocket](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ServerSocket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ServerSocket представляет прослушивающий сокет и предоставляет поток объектов Socket.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ServerSocket)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_Socket;;
+		->concept_stream;;
+		->concept_listening_socket;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ServerSocket;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ServerSocket используют на стороне сервера.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.ServerSocket)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_servers;;
+        *);;
+*);;

@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_Process;;
+
+concept_Process => nrel_system_idtf: [concept_Process];;
+concept_Process => nrel_main_idtf: [Process](*<- lang_ru;;*);;
+concept_Process => nrel_idtf: [Process](*<- lang_ru;;*);;
+concept_Process => nrel_idtf: [Process](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Process;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс Process предоставляет способ запустить процесс на собственном компьютере.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Process)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+		->concept_object;;
+		->concept_way_to_run;;
+		->concept_process;;
+		->concept_computer;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Process;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Класс Process описывает средство выполнения программы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Process)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+		->nrel_describes;;
+->concept_program_executor;;
+        *);;
+*);;
+
+

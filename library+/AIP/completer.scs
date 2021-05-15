@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_completer;;
+
+concept_completer => nrel_system_idtf: [concept_completer];;
+concept_completer => nrel_main_idtf: [Completer](*<- lang_ru;;*);;
+concept_completer => nrel_idtf: [Completer](*<- lang_ru;;*);;
+concept_completer => nrel_idtf: [Completer](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_completer;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Completer используется для создания объектов Future.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Completer)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_object_Future;;
+->nrel_creature;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_completer;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Completer дополнят объект Future значением или ошибкой.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Об.Completer)](*<- lang_ru;;*);;
+<= nrel_using_constants: ...
+        (*
+->concept_object_Future;;
+->concept_meaning;;
+->concept_error;;
+        *);;
+*);;

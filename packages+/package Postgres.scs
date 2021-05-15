@@ -1,0 +1,46 @@
+sc_node_not_relation -> concept_package_Postgres;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_PostgreSQL_database;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_query_format;;
+sc_node_not_relation -> concept_protocol;;
+
+sc_node_norole_relation -> nrel_connecting;;
+sc_node_norole_relation -> nrel_querying;;
+sc_node_norole_relation -> nrel_use;;
+sc_node_norole_relation -> nrel_extend;;
+
+concept_package_Postgres => nrel_main_idtf: [Пакет Postgres](* <- lang_ru;; *);;
+concept_package_Postgres => nrel_main_idtf: [Package Postgres](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_Postgres;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет Postgres – библиотека языка программирования Dart для подключения и запросов к базам данных PostgreSQL.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет Postgres)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	   -> concept_library;;
+	   -> concept_PostgreSQL_database;;
+	   -> nrel_connecting;;
+	   -> nrel_querying;;
+	   -> concept_programming_language_Dart;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_Postgres;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Использует расширенный формат запросов протокола PostgreSQL.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет Postgres)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_use;;
+	   -> nrel_extend;;
+	   -> concept_PostgreSQL_database;;
+	   -> concept_query_format;;
+	   -> concept_protocol;;
+	*);;
+*);;

@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_package_yaml;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_YAML;;
+sc_node_not_relation -> concept_document;;
+sc_node_not_relation -> concept_steam;;
+
+sc_node_norole_relation -> nrel_parsing;;
+sc_node_norole_relation -> nrel_use;;
+sc_node_norole_relation -> nrel_loading;;
+
+
+concept_package_yaml => nrel_main_idtf: [Пакет yaml](* <- lang_ru;; *);;
+concept_package_yaml => nrel_main_idtf: [Package yaml](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_yaml;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет yaml – Библиотека Dart для парсинга YAML.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет yaml)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> concept_YAML;;
+ 	  -> nrel_parsing;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_yaml;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Используется для загрузки документа или потока документов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет yaml)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	   -> nrel_use;;
+ 	   -> nrel_loading;;
+	   -> concept_document;;
+	   -> concept_steam;;
+	*);;
+*);;

@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_package_logging;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_event_log;;
+sc_node_not_relation -> concept_application;;
+sc_node_not_relation -> concept_class;;
+sc_node_not_relation -> concept_property;;
+sc_node_not_relation -> concept_message;;
+sc_node_not_relation -> concept_error;;
+sc_node_not_relation -> concept_register_name;;
+
+
+sc_node_norole_relation -> nrel_add;;
+sc_node_norole_relation -> nrel_have;;
+
+
+concept_package_logging => nrel_main_idtf: [Пакет logging](* <- lang_ru;; *);;
+concept_package_logging => nrel_main_idtf: [Package logging](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_logging;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Package logging – Библиотека Dart для добавления журнала событий в приложение.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет logging)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+ 	  -> nrel_add;;
+	  -> concept_event_log;;
+	  -> concept_application;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_logging;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Класс имеет различные свойства для сообщений, ошибок, имени регистратора.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет logging)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      		-> concept_class;;
+		-> concept_property;;
+		-> nrel_have;;
+		-> concept_message;;
+		-> concept_error;;
+		-> concept_register_name;;
+	*);;
+*);;

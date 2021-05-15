@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_package_intl;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_internationalization;;
+sc_node_not_relation -> concept_localization;;
+sc_node_not_relation -> concept_facilities;;
+
+sc_node_norole_relation -> nrel_provide;;
+
+concept_package_intl => nrel_main_idtf: [Пакет intl](* <- lang_ru;; *);;
+concept_package_intl => nrel_main_idtf: [Package intl](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_intl;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Package intl – Библиотека Dart для интернационализации и локализации.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет intl)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+	  -> concept_internationalization;;
+	  -> concept_localization;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_intl;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет средства интернационализации и локализации.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет intl)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+            -> nrel_provide;;
+	    -> concept_internationalization;;
+	    -> concept_localization;;
+	    -> concept_facilities;;
+	*);;
+*);;

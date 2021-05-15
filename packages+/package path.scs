@@ -1,0 +1,46 @@
+sc_node_not_relation -> concept_package_path;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_path;;
+sc_node_not_relation -> concept_standart_operation;;
+
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_joining;;
+sc_node_norole_relation -> nrel_splitting;;
+sc_node_norole_relation -> nrel_normalizing;;
+
+
+concept_package_path => nrel_main_idtf: [Пакет path](* <- lang_ru;; *);;
+concept_package_path => nrel_main_idtf: [Package path](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_path;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет path – Библиотека Dart для управления путями.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет path)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+	  -> concept_path;;
+ 	  -> nrel_control;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_path;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет стандартные операции для управления путями: соединение, разделение, нормализацию ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет path)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> nrel_provide;;
+	  -> concept_standart_operation;;
+	  -> concept_path;;
+	  -> nrel_control;;
+	  -> nrel_joining;;
+	  -> nrel_splitting;;
+	  -> nrel_normalizing;;
+	*);;
+*);;

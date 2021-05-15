@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_package_collection;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_collection;;
+sc_node_not_relation -> concept_service_class;;
+
+sc_node_norole_relation -> nrel_work;;
+sc_node_norole_relation -> nrel_use;;
+
+
+
+concept_package_collection => nrel_main_idtf: [Пакет collection](* <- lang_ru;; *);;
+concept_package_collection => nrel_main_idtf: [Package collection](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_collection;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет collection – Библиотека Dart для работы с коллекциями.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет collection)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> concept_collection;;
+	  -> nrel_work;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_collection;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Использует служебные классы для работы с коллекциями.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет collection)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> concept_collection;;
+	  -> concept_service_class;;
+	  -> nrel_work;;
+	  -> nrel_use;;
+	
+	*);;
+*);;

@@ -1,0 +1,46 @@
+sc_node_not_relation -> concept_package_io;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_file;;
+sc_node_not_relation -> concept_possibility;;
+sc_node_not_relation -> concept_process;;
+sc_node_not_relation -> concept_stdin;;
+sc_node_not_relation -> concept_file_duplication;;
+
+sc_node_norole_relation -> nrel_work;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+
+concept_package_io => nrel_main_idtf: [Пакет io](* <- lang_ru;; *);;
+concept_package_io => nrel_main_idtf: [Package io](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_io;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет io – Библиотека Dart для работы с файлами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет io)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> concept_file;;
+	  -> nrel_work;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_io;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможность работы с процессами, стандартным вводом и дублированием файлов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет io)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> nrel_provide;;
+ 	  -> concept_possibility;;
+	  -> nrel_work;;
+ 	  -> concept_process;;
+	  -> concept_stdin;;
+	  -> concept_file_duplication;;
+	*);;
+*);;

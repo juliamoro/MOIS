@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_package_archive;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_archive;;
+sc_node_not_relation -> concept_compression_format;;
+sc_node_not_relation -> concept_Zip_format;;
+sc_node_not_relation -> concept_Tar_format;;
+sc_node_not_relation -> concept_zLib_format;;
+sc_node_not_relation -> concept_GZip_format;;
+sc_node_not_relation -> concept_BZip2_format;;
+
+sc_node_norole_relation -> nrel_coding;;
+sc_node_norole_relation -> nrel_decoding;;
+sc_node_norole_relation -> nrel_support;;
+
+
+concept_package_archive => nrel_main_idtf: [Пакет архивов](* <- lang_ru;; *);;
+concept_package_archive => nrel_main_idtf: [Package archive](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_archive;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Package archive – Библиотека Dart для кодирования и декодирования различных архивов и форматов сжатия.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет архивов)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> nrel_coding;;
+	  -> nrel_decoding;;
+          -> concept_library;;
+	  -> concept_archive;;
+	  -> concept_compression_format;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_archive;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поддерживает следующие форматы сжатия: Zip, Tar, ZLib, GZip, BZip2.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет архивов)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+        -> nrel_support;;
+ 	-> concept_compression_format;;
+	-> concept_Zip_format;;
+	-> concept_Tar_format;;
+	-> concept_zLib_format;;
+	-> concept_GZip_format;;
+	-> concept_BZip2_format;;
+	*);;
+*);;

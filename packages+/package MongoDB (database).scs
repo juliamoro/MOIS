@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_package_MongoDB;;
+
+sc_node_not_relation -> concept_document;;
+sc_node_not_relation -> concept_server;;
+sc_node_not_relation -> concept_driver;;
+sc_node_not_relation -> concept_programming_language_Dart;;
+sc_node_not_relation -> concept_library;;
+
+sc_node_norole_relation -> nrel_insert;;
+sc_node_norole_relation -> nrel_support;;
+sc_node_norole_relation -> nrel_search;;
+sc_node_norole_relation -> nrel_delete;;
+sc_node_norole_relation -> nrel_update;;
+
+
+concept_package_MongoDB => nrel_main_idtf: [Пакет MongoDB](* <- lang_ru;; *);;
+concept_package_MongoDB => nrel_main_idtf: [Package MongoDB](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_MongoDB;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет MongoDB – серверная библиотека драйверов на языке программирования Dart.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет MongoDB)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_server;;
+	  -> concept_driver;;
+	  -> concept_programming_language_Dart;;
+	  -> concept_library;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_MongoDB;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Поддерживает вставку, поиск, обновление, сохранение и удаление документов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет MongoDB)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+           -> nrel_support;;
+	   -> nrel_insert;;
+	   -> nrel_search;;
+	   -> nrel_delete;;
+	   -> nrel_update;;
+	   -> concept_document;;
+	*);;
+*);;

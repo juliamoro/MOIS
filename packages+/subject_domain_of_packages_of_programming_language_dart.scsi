@@ -1,0 +1,31 @@
+subject_domain_of_packages_of_programming_language_dart
+	=> nrel_main_idtf:[Предметная область пакетов языка программирования dart.](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of packages of programming language dart.](* <- lang_en;; *);
+<- subject_domain;
+
+//-> rrel_maximum_studied_object_class: java;
+
+-> rrel_not_maximum_studied_object_class:
+        concept_package_archive;
+        concept_package_async;
+        concept_package_characters;
+        concept_package_collection;
+        concept_package_convert;
+        concept_package_http;
+        concept_package_intl;
+        concept_package_io;
+        concept_package_json_serializable;
+        concept_package_logging;
+        concept_package_mockito;
+        concept_package_MongoDB;
+        concept_package_path;
+        concept_package_Postgres;
+        concept_package_quiver;
+        concept_package_shelf;
+        concept_package_stack_trace;
+        concept_package_stagehand;
+        concept_package_test;
+        concept_package_yaml;
+        concept_shared_preferences_package;
+        concept_flutter_map_package;
+        concept_SQLJockey_database;;

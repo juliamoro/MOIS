@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_package_test;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_test;;
+sc_node_not_relation -> concept_assync_test;;
+sc_node_not_relation -> concept_classic_test;;
+sc_node_not_relation -> concept_possibility;;
+
+sc_node_norole_relation -> nrel_run;;
+sc_node_norole_relation -> nrel_tune;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_debug;;
+sc_node_norole_relation -> nrel_write;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+
+concept_package_test => nrel_main_idtf: [Пакет test](* <- lang_ru;; *);;
+concept_package_test => nrel_main_idtf: [Package test](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_test;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет test – Библиотека Dart для написания и запуска тестов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет test)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> nrel_run;;
+	  -> nrel_write;;
+	  -> concept_test;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_test;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможности создания, настройки, запуска и отладки классических и асинхронных тестов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет test)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> concept_possibility;;
+ 	  -> nrel_provide;;
+	  -> concept_assync_test;;
+	  -> concept_classic_test;;
+	  -> nrel_run;;
+	  -> nrel_tune;;
+	  -> nrel_create;;
+	  -> nrel_debug;;
+	*);;
+*);;

@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_package_convert;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_data;;
+sc_node_not_relation -> concept_data_representation;;
+sc_node_not_relation -> concept_encoder;;
+sc_node_not_relation -> concept_decoder;;
+
+sc_node_norole_relation -> nrel_converting;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+
+concept_package_convert => nrel_main_idtf: [Пакет convert](* <- lang_ru;; *);;
+concept_package_convert => nrel_main_idtf: [Package convert](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_convert;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет convert – Библиотека Dart для преобразований данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет convert)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> concept_data;;
+	  -> nrel_converting;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_convert;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет кодеры и декодеры для преобразований между различными представлениями данных.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет convert)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> concept_data_representation;;
+	  -> concept_encoder;;
+	  -> concept_decoder;;
+	  -> nrel_provide;;
+ 	  -> nrel_converting;;
+	*);;
+*);;

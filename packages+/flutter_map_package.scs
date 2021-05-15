@@ -1,0 +1,36 @@
+sc_node_not_relation-> concept_flutter_map_package;;
+
+sc_node_not_relation-> concept_package;;
+sc_node_not_relation-> concept_tile_maps;;
+sc_node_not_relation-> concept_latlong_package;;
+
+sc_node_norole_relation -> nrel_display;;
+sc_node_norole_relation -> nrel_need_to_connect;;
+
+concept_flutter_map_package=> nrel_main_idtf: [Пакет flutter_map](*<- lang_ru;;*);;
+concept_flutter_map_package=> nrel_main_idtf: [flutter_map package](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_flutter_map_package;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет flutter_map - пакет для отображения тайловых карт. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Пакет flutter_map)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_package;
+    concept_tile_maps;
+    nrel_display
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_flutter_map_package ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Для работы пакета flutter_map необходимо подключить также пакет latlong. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Пакет flutter_map)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    concept_latlong_package;
+    nrel_need_to_connect
+};;
+*);;

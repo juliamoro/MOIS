@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_package_mockito;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_layout;;
+
+sc_node_not_relation -> concept_conception;;
+sc_node_not_relation -> concept_argument_matcher;;
+sc_node_not_relation -> concept_argument;;
+
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_capture;;
+
+
+concept_package_mockito => nrel_main_idtf: [Пакет mockito](* <- lang_ru;; *);;
+concept_package_mockito => nrel_main_idtf: [Package mockito](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_mockito;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Package mockito – Библиотека Dart для макетов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет mockito)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+	  -> concept_layout;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_mockito;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет концепцию «сопоставителя аргументов» для захвата аргументов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет mockito)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> nrel_provide;;
+	  -> concept_conception;;
+ 	  -> concept_argument_matcher;;
+	  -> nrel_capture;;
+	  -> concept_argument;;
+	*);;
+*);;

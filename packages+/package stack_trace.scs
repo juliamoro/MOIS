@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_package_stack_trace;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_stack_trace;;
+sc_node_not_relation -> concept_possibility;;
+
+sc_node_norole_relation -> nrel_work;;
+sc_node_norole_relation -> nrel_provide;;
+sc_node_norole_relation -> nrel_analyze;;
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_check;;
+
+
+
+
+concept_package_stack_trace => nrel_main_idtf: [Пакет stack trace](* <- lang_ru;; *);;
+concept_package_stack_trace => nrel_main_idtf: [Package stack trace](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_stack_trace;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет stack trace – Библиотека Dart для работы с трассировками стека.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет stack trace)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> nrel_work;;
+	  -> concept_stack_trace;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_stack_trace;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможность анализировать, проверять и управлять трассировками стека.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет stack trace)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	 -> nrel_provide;;
+	 -> concept_possibility;;
+ 	 -> concept_stack_trace;;
+	 -> nrel_analyze;;
+	 -> nrel_control;;
+	 -> nrel_check;;
+	*);;
+*);;

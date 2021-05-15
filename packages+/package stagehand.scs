@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_package_stagehand;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_operating_mode;;
+sc_node_not_relation -> concept_command_line;;
+sc_node_not_relation -> concept_project;;
+
+sc_node_norole_relation -> nrel_have;;
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_tune;;
+
+
+concept_package_stagehand => nrel_main_idtf: [Пакет stagehand](* <- lang_ru;; *);;
+concept_package_stagehand => nrel_main_idtf: [Package stagehand](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_stagehand;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет stagehand – Библиотека Dart для создания и настройки проектов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет stagehand)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> nrel_create;;
+	  -> nrel_tune;;
+	  -> concept_project;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_stagehand;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Имеет режим работы в командной строке.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет stagehand)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> concept_operating_mode;;
+	  -> concept_command_line;;
+	  -> nrel_have;;
+	*);;
+*);;

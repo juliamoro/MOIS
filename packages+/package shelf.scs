@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_package_shelf;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_web_server;;
+sc_node_not_relation -> concept_possibility;;
+sc_node_not_relation -> concept_layout;;
+
+sc_node_norole_relation -> nrel_create;;
+sc_node_norole_relation -> nrel_control;;
+sc_node_norole_relation -> nrel_provide;;
+
+
+concept_package_shelf => nrel_main_idtf: [Пакет shelf](* <- lang_ru;; *);;
+concept_package_shelf => nrel_main_idtf: [Package shelf](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_shelf;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет shelf – Библиотека Dart для создания и управления веб-серверами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет shelf)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+	  -> concept_web_server;;
+	  -> nrel_create;;
+	  -> nrel_control;;	
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_shelf;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Предоставляет возможность создания и компоновки веб-серверов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет shelf)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	  -> nrel_provide;;
+	  -> nrel_create;;
+	  -> concept_possibility;;
+	  -> concept_web_server;;
+	  -> concept_layout;;
+	
+	*);;
+*);;

@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_package_characters;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_string;;
+sc_node_not_relation -> concept_encoding_Unicode;;
+
+sc_node_norole_relation -> nrel_action;;
+sc_node_norole_relation -> nrel_allows_action;;
+
+
+concept_package_characters => nrel_main_idtf: [Пакет символов](* <- lang_ru;; *);;
+concept_package_characters => nrel_main_idtf: [Package characters](* <- lang_en;; *);;
+
+   
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_characters;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Package characters – Библиотека Dart для действий со строками.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет символов)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> concept_library;;
+	  -> nrel_action;;
+	  -> concept_string;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_characters;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Позволяет осуществлять действия со строками в кодировке Unicode.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет символов)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+          -> nrel_allows_action;;
+ 	  -> concept_string;;
+	  -> concept_encoding_Unicode;;
+	*);;
+*);;

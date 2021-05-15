@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_package_async;;
+
+sc_node_not_relation -> concept_library;;
+sc_node_not_relation -> concept_assync_method;;
+sc_node_not_relation -> concept_service_class;;
+
+sc_node_norole_relation -> nrel_work;;
+sc_node_norole_relation -> nrel_use;;
+
+
+
+concept_package_async => nrel_main_idtf: [Пакет async](* <- lang_ru;; *);;
+concept_package_async => nrel_main_idtf: [Package async](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_package_async;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пакет async – Библиотека Dart для работы с асинхронными методами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Пакет async)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+	  -> concept_library;;
+          -> concept_assync_method;;
+  	  -> nrel_work;;
+	*);;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_package_async;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Использует служебные классы для работы с асинхронными методами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Пакет async)](*<- lang_ru;;*);;
+	=> nrel_using_constants: ...
+	(*
+      	   -> nrel_use;;
+ 	   -> concept_assync_method;;
+	   -> concept_service_class;;
+ 	   -> nrel_work;;	
+	*);;
+*);;
